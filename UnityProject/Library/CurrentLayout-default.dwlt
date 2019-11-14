@@ -325,8 +325,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 40300000
-      m_LastClickedID: 12352
+      m_SelectedIDs: e42f0000
+      m_LastClickedID: 12260
       m_ExpandedIDs: 6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -430,10 +430,10 @@ MonoBehaviour:
     m_Folders:
     - Assets/Scripts
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 96
   m_LastFolders:
   - Assets/Scripts
-  m_LastFoldersGridSize: -1
+  m_LastFoldersGridSize: 96
   m_LastProjectPath: D:\KID\Unity_HC_ZL_2D_Game\UnityProject
   m_LockTracker:
     m_IsLocked: 0
@@ -521,8 +521,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_ScrollPosition: {x: 0, y: 86}
+    m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 112
 --- !u!114 &16
