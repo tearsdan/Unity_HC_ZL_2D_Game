@@ -1540,6 +1540,9 @@ MonoBehaviour:
   prop: "\u85CD\u8272\u85E5\u6C34"
   mission: 1
   hp: 100
+  jump: 124.21
+  dead: 0
+  mp: 320
 --- !u!4 &2105724007
 Transform:
   m_ObjectHideFlags: 0
