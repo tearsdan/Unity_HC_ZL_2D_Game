@@ -11,4 +11,10 @@ public class LearnEvent : MonoBehaviour
         // 輸出方法(物件);
         print("哈囉，沃德~ :P");
     }
+
+    // 更新事件：每秒執行約 60 次 (60FPS frame per second)
+    private void Update()
+    {
+        print("嗨嗨嗨~");
+    }
 }
