@@ -36,6 +36,12 @@ public class LearnMethod : MonoBehaviour
         print("弓箭屬性：" + prop);
     }
 
+    // 有傳回
+    private string PrintName(string name)
+    {
+        return "嗨~ " + name + " 你好~";
+    }
+
     private void Start()
     {
         // 呼叫方法，給予對應的引數
@@ -47,5 +53,11 @@ public class LearnMethod : MonoBehaviour
         Shoot(10, "前後");
         // 可以具名使用指定的選填式參數
         Shoot(3, prop: "火屬性");
+
+        // 區域欄位，不需要修飾詞
+        string pn = PrintName("KID");
+        print(pn);
+        // 將傳回方法當作傳回類型資料使用
+        print(PrintName("芭辣~"));
     }
 }
