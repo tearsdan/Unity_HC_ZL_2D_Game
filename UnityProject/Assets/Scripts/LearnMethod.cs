@@ -29,10 +29,11 @@ public class LearnMethod : MonoBehaviour
     // 參數不能重複名稱，可以與欄位相同
     // 參數可以給預設值，選填式參數
     // 選填式參數只能寫在最後面
-    private void Shoot(int count, string direction = "前方")
+    private void Shoot(int count, string direction = "前方", string prop = "無")
     {
         print("弓箭數量：" + count);
         print("弓箭方向" + direction);
+        print("弓箭屬性：" + prop);
     }
 
     private void Start()
@@ -44,5 +45,7 @@ public class LearnMethod : MonoBehaviour
         // 不填寫選填式參數，以預設值執行方法
         Shoot(1);
         Shoot(10, "前後");
+        // 可以具名使用指定的選填式參數
+        Shoot(3, prop: "火屬性");
     }
 }
