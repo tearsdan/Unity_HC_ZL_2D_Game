@@ -6,4 +6,29 @@ public class GameManager : MonoBehaviour
     public int score;
     [Header("最高分數")]
     public int scoreHeight;
+
+    /// <summary>
+    /// 加分功能
+    /// </summary>
+    /// <param name="add">要添加的分數</param>
+    public void AddScore(int add)
+    {
+
+    }
+
+    /// <summary>
+    /// 設定最高分數
+    /// </summary>
+    private void SetHeightScore()
+    {
+
+    }
+
+    /// <summary>
+    /// 遊戲結束
+    /// </summary>
+    public void GameOver()
+    {
+
+    }
 }

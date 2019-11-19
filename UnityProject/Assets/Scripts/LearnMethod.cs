@@ -57,6 +57,7 @@ public class LearnMethod : MonoBehaviour
         // 區域欄位，不需要修飾詞
         string pn = PrintName("KID");
         print(pn);
+
         // 將傳回方法當作傳回類型資料使用
         print(PrintName("芭辣~"));
     }
