@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        SpawnPipe();
+        // 延遲重複調用方法("方法名稱"，延遲時間，重複頻率)
+        InvokeRepeating("SpawnPipe", 0, 1.5f);
     }
 }
