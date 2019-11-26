@@ -13,5 +13,9 @@ public class LearnOperator : MonoBehaviour
         print(a * b);
         print(a / b);
         print(a % b);
+
+        a = a + 1;      // 等號右邊先執行再存回左邊
+        print(a++);     // 先輸出再執行遞增
+        print(++a);     // 先執行遞增再輸出
     }
 }
