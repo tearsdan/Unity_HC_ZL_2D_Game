@@ -2,6 +2,9 @@
 
 public class LearnAPI : MonoBehaviour
 {
+    public Transform tranA;
+    public Transform tranB;
+
     private void Start()
     {
         print("輸出!");
@@ -20,6 +23,11 @@ public class LearnAPI : MonoBehaviour
         Debug.Log(true);
         Debug.LogWarning("警告");
         Debug.LogError("錯誤");
+
+        // 非靜態屬性：實體類別.屬性
+        print(tranA.position);
+        print(tranB.position);
+        // print(Transform.position); // 錯誤
     }
 
     private void Update()
