@@ -1694,6 +1694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tranA: {fileID: 235331179}
   tranB: {fileID: 99102688}
+  spriteA: {fileID: 235331178}
 --- !u!1 &2139400344
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,8 @@ public class LearnAPI : MonoBehaviour
     public Transform tranA;
     public Transform tranB;
 
+    public SpriteRenderer spriteA;
+
     private void Start()
     {
         print("輸出!");
@@ -30,6 +32,11 @@ public class LearnAPI : MonoBehaviour
         print(tranB.position);
         // 存放非靜態屬性
         tranA.position = new Vector3(-1, 0, 0);
+
+        tranA.localScale = new Vector3(5, 5, 5);
+
+        spriteA.flipX = true;
+        spriteA.flipY = true;
     }
 
     private void Update()
@@ -41,6 +48,6 @@ public class LearnAPI : MonoBehaviour
         print(Input.GetKeyDown("s"));
 
         // 非靜態方法：實體類別.方法(對應的引數)
-        tranA.Rotate(0, 0, 10);
+        //tranA.Rotate(0, 0, 10);
     }
 }
