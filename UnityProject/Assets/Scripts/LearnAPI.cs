@@ -16,7 +16,7 @@ public class LearnAPI : MonoBehaviour
         // 練習取得 PI
         print(Mathf.PI);
 
-        // 靜態方法：類別.方法(對應的參數);
+        // 靜態方法：類別.方法(對應的引數);
         print("隨機範圍：" + Random.Range(50.5f, 100.9f));
 
         // object 任何類型：int、float、string、bool
@@ -25,9 +25,11 @@ public class LearnAPI : MonoBehaviour
         Debug.LogError("錯誤");
 
         // 非靜態屬性：實體類別.屬性
+        // print(Transform.position); // 錯誤
         print(tranA.position);
         print(tranB.position);
-        // print(Transform.position); // 錯誤
+        // 存放非靜態屬性
+        tranA.position = new Vector3(-1, 0, 0);
     }
 
     private void Update()
@@ -37,5 +39,8 @@ public class LearnAPI : MonoBehaviour
 
         // 練習：請練習偵測玩家有沒有按 s
         print(Input.GetKeyDown("s"));
+
+        // 非靜態方法：實體類別.方法(對應的引數)
+        tranA.Rotate(0, 0, 10);
     }
 }
