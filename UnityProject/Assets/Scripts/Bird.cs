@@ -18,6 +18,9 @@ public class Bird : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             print("按下左鍵");
+            
+            goScore.SetActive(true);    // 分數 顯示
+            goGM.SetActive(true);       // GM 顯示
         }
     }
 
