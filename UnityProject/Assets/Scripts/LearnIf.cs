@@ -6,6 +6,8 @@ public class LearnIf : MonoBehaviour
 
     public int score;
 
+    public int combo;
+
     private void Start()
     {
         // 判斷式 if (switch)
@@ -46,6 +48,19 @@ public class LearnIf : MonoBehaviour
         else
         {
             print("不及格!");
+        }
+
+        if (combo >= 150)
+        {
+            print("攻擊 10 倍");
+        }
+        else if (combo >= 100)
+        {
+            print("攻擊 5 倍");
+        }
+        else if (combo >= 50)
+        {
+            print("攻擊 2 倍");
         }
     }
 }
