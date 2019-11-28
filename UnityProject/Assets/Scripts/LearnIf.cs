@@ -4,6 +4,8 @@ public class LearnIf : MonoBehaviour
 {
     public bool open;
 
+    public int score;
+
     private void Start()
     {
         // 判斷式 if (switch)
@@ -27,6 +29,23 @@ public class LearnIf : MonoBehaviour
         else
         {
             print("關門!");
+        }
+
+        if (score >= 60)
+        {
+            print("及格了!");
+        }
+        else if (score >= 40)
+        {
+            print("你可以補考!");
+        }
+        else if (score >= 30)
+        {
+            print("你可以付錢補考!");
+        }
+        else
+        {
+            print("不及格!");
         }
     }
 }
