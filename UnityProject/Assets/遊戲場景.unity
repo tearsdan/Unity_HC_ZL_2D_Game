@@ -1616,6 +1616,7 @@ GameObject:
   - component: {fileID: 2105724009}
   - component: {fileID: 2105724010}
   - component: {fileID: 2105724011}
+  - component: {fileID: 2105724012}
   m_Layer: 0
   m_Name: "\u7DF4\u7FD2\u7269\u4EF6"
   m_TagString: Untagged
@@ -1704,13 +1705,32 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105724005}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceff29dd64bdeb844a6a08a27c510741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   a: 10
   b: 3
+  c: 9
+  d: 1
+  apple: 5
+  coin: 3
+  key: 0
+  boom: 5
+--- !u!114 &2105724012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105724005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbeba77d48ec331489dde5e815c26a3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  open: 1
 --- !u!1 &2139400344
 GameObject:
   m_ObjectHideFlags: 0
