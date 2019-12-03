@@ -24,7 +24,9 @@ public class Bird : MonoBehaviour
             goScore.SetActive(true);    // 分數 顯示
             goGM.SetActive(true);       // GM 顯示
 
-            r2d.gravityScale = 1;       // 剛體.重力 = 1
+            r2d.gravityScale = 1;                   // 剛體.重力 = 1
+            // 剛體.睡覺()
+            r2d.AddForce(new Vector2(0, jump));     // 剛體.增加推力(二維向量)
         }
     }
 
