@@ -67,4 +67,10 @@ public class Bird : MonoBehaviour
 
         Dead();
     }
+
+    // 觸發事件：觸發其他碰撞器開始時執行一次 (針對勾選 IsTrigger 的物件)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Dead();
+    }
 }
