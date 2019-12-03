@@ -27,8 +27,10 @@ public class Bird : MonoBehaviour
             r2d.gravityScale = 1;                   // 剛體.重力 = 1
             r2d.Sleep();                            // 剛體.睡覺()
             r2d.AddForce(new Vector2(0, jump));     // 剛體.增加推力(二維向量)
-            r2d.SetRotation(50);                    // 剛體.設定角度(角度)
         }
+
+        // velocity 剛體加速度 (x, y) 左右 x, 上下 y
+        r2d.SetRotation(5 * r2d.velocity.y);                    // 剛體.設定角度(角度)
     }
 
     /// <summary>
