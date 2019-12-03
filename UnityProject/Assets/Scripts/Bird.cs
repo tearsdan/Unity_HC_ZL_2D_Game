@@ -54,4 +54,10 @@ public class Bird : MonoBehaviour
     {
         Jump();
     }
+
+    // 碰撞事件：碰到其他碰撞器開始時執行一次 (碰到物件的碰撞資訊)
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        print(collision.gameObject.name);
+    }
 }
