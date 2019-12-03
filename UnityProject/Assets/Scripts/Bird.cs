@@ -16,6 +16,8 @@ public class Bird : MonoBehaviour
     /// </summary>
     private void Jump()
     {
+        if (dead) return; // 跳出此方法
+        
         // 如果 按下 左鍵
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
@@ -38,7 +40,7 @@ public class Bird : MonoBehaviour
     /// </summary>
     private void Dead()
     {
-
+        dead = true;
     }
 
     /// <summary>
@@ -59,5 +61,7 @@ public class Bird : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         print(collision.gameObject.name);
+
+        Dead();
     }
 }
