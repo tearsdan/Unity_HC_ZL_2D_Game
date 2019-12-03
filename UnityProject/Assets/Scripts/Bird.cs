@@ -8,6 +8,8 @@ public class Bird : MonoBehaviour
     public bool dead;
 
     public GameObject goScore, goGM;
+    [Header("剛體")]
+    public Rigidbody2D r2d;
 
     /// <summary>
     /// 小雞跳躍功能
@@ -21,6 +23,8 @@ public class Bird : MonoBehaviour
             
             goScore.SetActive(true);    // 分數 顯示
             goGM.SetActive(true);       // GM 顯示
+
+            r2d.gravityScale = 1;       // 剛體.重力 = 1
         }
     }
 

@@ -594,6 +594,7 @@ MonoBehaviour:
   dead: 0
   goScore: {fileID: 1398995251}
   goGM: {fileID: 2139400344}
+  r2d: {fileID: 235331181}
 --- !u!50 &235331181
 Rigidbody2D:
   serializedVersion: 4
