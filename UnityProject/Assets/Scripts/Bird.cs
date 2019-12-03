@@ -11,6 +11,8 @@ public class Bird : MonoBehaviour
     [Header("剛體")]
     public Rigidbody2D r2d;
 
+    public GameManager gm;
+
     /// <summary>
     /// 小雞跳躍功能
     /// </summary>
@@ -41,6 +43,7 @@ public class Bird : MonoBehaviour
     private void Dead()
     {
         dead = true;
+        gm.GameOver();
     }
 
     /// <summary>
