@@ -13,6 +13,10 @@ public class Bird : MonoBehaviour
 
     public GameManager gm;
 
+    [Header("音效區域")]
+    public AudioSource aud;
+    public AudioClip soundJump, soundHit, soundAdd;
+
     /// <summary>
     /// 小雞跳躍功能
     /// </summary>
@@ -31,6 +35,8 @@ public class Bird : MonoBehaviour
             r2d.gravityScale = 1;                   // 剛體.重力 = 1
             r2d.Sleep();                            // 剛體.睡覺()
             r2d.AddForce(new Vector2(0, jump));     // 剛體.增加推力(二維向量)
+
+            aud.PlayOneShot(soundJump, 1.5f);       // 音源.播放一次(音效片段，片段)
         }
 
         // velocity 剛體加速度 (x, y) 左右 x, 上下 y
@@ -44,6 +50,7 @@ public class Bird : MonoBehaviour
     {
         dead = true;
         gm.GameOver();
+        aud.PlayOneShot(soundHit, 1.5f);
     }
 
     /// <summary>
@@ -72,5 +79,8 @@ public class Bird : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Dead();
+
+
+        if (collision.gameObject.name == "水管 - 上" collision.gameObject.name == "水管 - 上") ;
     }
 }
