@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;                  // 引用 介面 API
+using UnityEngine.SceneManagement;     // 引用 場景管理 API
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +12,9 @@ public class GameManager : MonoBehaviour
     public GameObject pipe; // GameObject 可以存放預製物以及場景上的物件
     [Header("介面群組")]
     public GameObject goUI;
+    [Header("分數群組")]
+    public Text textScore;
+    public Text textHeight;
 
     /// <summary>
     /// 生成水管功能
@@ -57,9 +62,41 @@ public class GameManager : MonoBehaviour
         goUI.SetActive(true);
     }
 
+    /// <summary>
+    /// 重新遊戲
+    /// </summary>
+    public void Replay()
+    {
+        //Application.LoadLevel("遊戲場景");   //  應用程式.載入關卡("關卡名稱") 舊版 API
+        SceneManager.LoadScene("遊戲場景");    //  場景管理.載入場景("場景名稱") 新版 API
+    }
+
+    /// <summary>
+    /// 離開遊戲
+    /// </summary>
+    public void Exit()
+    {
+        Application.Quit();               // 應用程式.離開遊戲
+    }
+
+
+    //遊戲開始事件
     private void Start()
     {
         // 延遲重複調用方法("方法名稱"，延遲時間，重複頻率)
         InvokeRepeating("SpawnPipe", 0, 1.5f);
+
+        // 遊戲開始 更新 最高分數介面
+        scoreHeight = PlayerPrefs.GetInt("最高分數");
+        textHeight.text = scoreHeight.ToString();
+
+         //靜態欄位會保留上次的值，必須重新設定
+        Ground.speed = 5;
     }
+
 }
+
+    
+
+
+
